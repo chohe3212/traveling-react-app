@@ -1,5 +1,10 @@
-
-.logo{
+.menu-page {
+  height: 80px;
+}
+.menu-page .inner {
+  height: 80px;
+}
+.menu-page .logo{
     width : 100px;
     height: 40px;
     position: absolute; /* 부모요소 기준으로 작성하겠다.*/
@@ -7,41 +12,63 @@
     bottom : 0;
     left : 0;
     right : 0;
-    margin: auto 0;
+    margin-top : 17px;
     font-size: 25px;
+    cursor: pointer;
     font-style: italic;
     color : #333;
+    transition: 0.8s ease-in-out;
     text-shadow: 2px 1px rgb(151, 151, 151);
   }
-  
-.menu{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  
-    margin-top: 30px;
-  }
-  
-.signin {
+.menu-page .logo:hover{
+    color : #fff;
+    transition: 0.8s ease-in-out;
+    text-shadow : 1px 2px rgb(141, 141, 141);
+}
+
+.menu-page .menu {
+  position: absolute;
+  width: 45%;
+  left: 50%;
+  top: 50%;
+  display: inline-flex;
+  justify-content: space-between;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.menu-page .signin {
     position: absolute;
     top : 10px;
     right : 5px;
     display: flex;
   }
   
-.menu a,
-.signin a{
+.menu-page .menu a{
     cursor: pointer;
     position: relative;
     transition : .5s;
-    margin-left: 60px;
   }
-.menu a:hover,
-.signin a:hover {
+
+.menu-page .menu a:hover {
     font-size: 18px;
     transition : .5s;
   }
   
-.menu a:nth-child(1){
-    margin-left:0;
-  }
+.menu-page .menu a:nth-child(1){
+    padding-left:0;
+}
+.menu-page .login_btn {
+  background-color : rgbs (0,0,0,0.6);
+  padding: 5px, 9px;
+  text-transform: uppercase;
+  letter-spacing:1.5px;
+  border: 1px solid #f9f9f9;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+
+  &:hover {
+    background-color : #f9f9f9;
+    color: #000;
+    border-color:transparent;
+  } 
+}

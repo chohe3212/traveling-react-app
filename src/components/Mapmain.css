@@ -1,0 +1,14 @@
+.Mapmain {
+  font-family: sans-serif;
+  text-align: center;
+  background: #101518;
+  width: 500px;
+  height: 500px;
+}
+
+.Mapmain .wrapper {
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 500px;
+}

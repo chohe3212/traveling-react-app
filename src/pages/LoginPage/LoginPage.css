@@ -1,0 +1,55 @@
+* {
+  font-family: 'Gowun Dodum', sans-serif;
+  box-sizing: border-box;
+}
+.login-page {
+  margin: 0;
+  background-color: rgb(233, 233, 233);
+}
+
+.login-page .signin {
+  width: 300px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #EEEFF1;
+  padding: 20px;
+  justify-content: center;
+  margin : 0 auto;
+}
+
+.login-page .signin h2 {
+  margin-left: 40px;
+}
+
+.login-page .signin .text-filed {
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin : 8 auto;
+}
+.login-page .signin .text-filed2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin : 8 auto;
+}
+
+.login-page .signin .submit-btn {
+  color: #EEEFF1;
+  font-size: 14px;
+  background-color: hwb(0 23% 77% / 0.801);
+  margin-bottom: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin : 30 auto;
+}
+.login-page .link_password a{
+  cursor: pointer;
+  font-size : 12px;
+  color: #9b9b9b;
+}

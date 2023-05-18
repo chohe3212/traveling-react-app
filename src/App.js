@@ -1,17 +1,27 @@
-import { useState } from 'react';
 import './App.css';
-import Menu from "./components/Menu.js";
-import Visual from "./components/Visual.js";
+import { Outlet, Route, Routes } from 'react-router-dom';
+import Menu from './components/Menu';
+import MainPage from './pages/MainPage';
+import LoginPage from './pages/LoginPage';
+
+const Layout = () => {
+  return (
+    <div>
+      <Menu />
+
+      <Outlet />
+    </div>
+  )
+}
 
 function App() {
   return (
-    <div>
-      <header>
-        <div className = "inner">
-          <Menu />
-        </div>
-      </header>
-      <Visual />
+    <div className='app'>
+      <Routes>
+        <Route path='/' element={<Layout />} />
+        <Route index element={<MainPage />} />
+        <Route path='login' element={<LoginPage />} />        
+      </Routes>
     </div>
   );
 }
