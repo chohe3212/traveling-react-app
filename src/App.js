@@ -3,6 +3,8 @@ import { Outlet, Route, Routes } from 'react-router-dom';
 import Menu from './components/Menu';
 import MainPage from './pages/MainPage';
 import LoginPage from './pages/LoginPage';
+import MapPage from './pages/MapPage';
+
 
 const Layout = () => {
   return (
@@ -21,6 +23,7 @@ function App() {
         <Route path='/' element={<Layout />} />
         <Route index element={<MainPage />} />
         <Route path='login' element={<LoginPage />} />        
+        <Route path='map' element={<MapPage />} />        
       </Routes>
     </div>
   );

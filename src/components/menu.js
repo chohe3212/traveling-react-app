@@ -10,9 +10,9 @@ const Menu = () => {
           Traveling
         </a>
         <div className="menu">
-          <a> My Map  </a>
-          <a> Recommendations</a>
-          <a> View all Posts</a>
+          <a onClick={() => (window.location.href = "/map")}> My Map  </a>
+          <a href='/'> Recommendations</a>
+          <a href='/'> View all Posts</a>
         </div>
         <div className="signin">
           <btn

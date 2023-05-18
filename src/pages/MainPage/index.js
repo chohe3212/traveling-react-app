@@ -2,7 +2,6 @@ import React from 'react'
 import Menu from "../../components/Menu";
 import Visual from "../../components/Visual";
 import "./MainPage.css";
-import Mapmain from '../../components/Mapmain';
 
 function MainPage() {
   return (
@@ -11,7 +10,6 @@ function MainPage() {
         <Menu />
       </header>
       <Visual />
-      <Mapmain />
     </div>
   )
 }
