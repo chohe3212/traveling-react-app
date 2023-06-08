@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Menu.css';
+import './menu.css';
 
 const Menu = () => {
 
@@ -19,6 +19,11 @@ const Menu = () => {
             className="login_btn"
             onClick={() => (window.location.href = "/login")}
           > Sign in </btn>
+          {/* 회원가입 버튼 생성 */}
+          <btn
+            className="signup_btn"
+            onClick={() => (window.location.href = "/signup")}
+          > Sign up </btn>
         </div>
       </div>
     </div>
