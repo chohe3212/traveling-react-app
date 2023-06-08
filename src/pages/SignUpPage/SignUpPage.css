@@ -5,55 +5,105 @@
   box-sizing: border-box;
   
 }
+
 .signup-page {
   margin: 0;
   background-color: rgb(233, 233, 233);
   background-size: cover;
+  height: 100vh;
+}
+
+.signup-page .logo{
+  width : 100px;
+  position: absolute; /* 부모요소 기준으로 작성하겠다.*/
+  margin-top : 20px;
+  margin-left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  font-style: italic;
+  color : #333;
+  transition: 0.8s ease-in-out;
+  text-shadow: 2px 1px rgb(151, 151, 151);
+}
+.signup-page .logo:hover{
+  color : #fff;
+  transition: 0.8s ease-in-out;
+  text-shadow : 1px 2px rgb(141, 141, 141);
 }
 
 .signup-page .signin {
-  width: 300px;
+  width: 500px;
+  height: 100%;
   border: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #ffffff;
   padding: 20px;
   justify-content: center;
   margin : 0 auto;
 }
 
-.login-page .signin h2 {
-  margin-left: 40px;
+.jb-division-line {
+  border-top: 1px solid #444444;
+  margin: 20px 10px;
+  margin-bottom: 40px;
 }
 
-.login-page .signin .text-filed {
-  font-size: 14px;
+
+.signup-page .signin h2 {
+  margin-left: 20px;
+}
+
+.signup-page .signin .text-filed {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.signup-page .signin .text-filed2 {
+  font-size: 15px;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
   padding: 10px;
-  margin : 8 auto;
-}
-.login-page .signin .text-filed2 {
-  font-size: 14px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin : 8 auto;
+  margin-left: 20px;
 }
 
-.login-page .signin .submit-btn {
+.signup-page .signin .submit-btn {
   color: #EEEFF1;
   font-size: 14px;
   background-color: hwb(0 23% 77% / 0.801);
   margin-bottom: 30px;
-  padding: 10px;
+  margin-top: 40px;
+  padding: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
   border: none;
   border-radius: 5px;
   margin : 30 auto;
+  margin-left: 350px;
 }
+
 .login-page .link_password a{
   cursor: pointer;
   font-size : 12px;
   color: #9b9b9b;
+}
+
+
+.errorMessage_ID{
+  font-weight: 600;
+  margin-top: 5px;
+  margin-left: 30px;
+  font-size: 12px;
+  color: red;
+}
+
+.errorMessage_PW{
+  font-weight: 600;
+  margin-top: 5px;
+  margin-left: 80px;
+  font-size: 12px;
+  color: red;
 }
